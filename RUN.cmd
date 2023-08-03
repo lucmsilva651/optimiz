@@ -12,4 +12,4 @@ echo.
 timeout /t 5 /nobreak >nul
 cd scripts
 
-misc_tweaks
+tweaks
