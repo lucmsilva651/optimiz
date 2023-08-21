@@ -12,8 +12,18 @@ wsreset
 taskkill /f /im WinStore.App.exe
 cls
 
+cd regFiles
 echo [optimiz] Now disabling the Lock Screen...
-REG ADD HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Personalization /v NoLockScreen /d 1 /f
+reg import NoLock.reg
 cls
 
-shell
+echo [optimiz] Disabling Web Search Suggestions on Search Bar...
+reg import DWS.reg
+cls
+
+echo [optimiz] Restoring the classic Alt+Tab style...
+reg import CAT.reg
+cls
+
+cd ..
+optimizShell

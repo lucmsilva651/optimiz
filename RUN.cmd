@@ -10,6 +10,6 @@ echo [optimiz] Developed by Lucas Gabriel (lucmsilva)
 echo [optimiz] https://github.com/lucmsilva651/optimiz
 echo.
 timeout /t 5 /nobreak >nul
-cd scripts
+cd scriptFiles
 
-tweaks
+moreTweaks
