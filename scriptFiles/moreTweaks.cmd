@@ -18,11 +18,20 @@ reg import NoLock.reg
 cls
 
 echo [optimiz] Disabling Web Search Suggestions on Search Bar...
-reg import DWS.reg
+reg import DisableWebSearch.reg
 cls
 
 echo [optimiz] Restoring the classic Alt+Tab style...
-reg import CAT.reg
+reg import ClassicAltTab.reg
+cls
+
+echo [optimiz] Disabling Live Tiles...
+reg import NoTileApp.reg
+cls
+
+echo [optimiz] Disabling Telemetry...
+reg import DisableTelemetry.reg
+sc config DiagTrack start= disabledsc config dmwappushservice start= disabled
 cls
 
 cd ..
