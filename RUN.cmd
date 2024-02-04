@@ -23,4 +23,5 @@ if '%errorlevel%' NEQ '0' (
     pushd "%CD%"
     CD /D "%~dp0"
 
-cmd /k tweaks\btweaks.cmd
+cd tweaks
+cmd /k MainTweaks.cmd
