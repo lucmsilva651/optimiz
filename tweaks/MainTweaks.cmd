@@ -58,11 +58,11 @@ cls
 
 IF EXIST "OOSU10.exe" (
 echo Importing O&O ShutUp10++ config file...
-oosu10.exe ooshutup10.cfg
+oosu10.exe ooshutup10.cfg /quiet
 ) ELSE (
 echo Downloading and importing O&O ShutUp10++ config file...
 byte https://dl5.oo-software.com/files/ooshutup10/OOSU10.exe
-oosu10.exe ooshutup10.cfg
+oosu10.exe ooshutup10.cfg /quiet
 )
 cls
 
